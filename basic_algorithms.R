@@ -2,7 +2,7 @@
 
 #finds ONE index m of elements of longDataVector, for which sign_function(longDataVector, m)==0
 which_bisectSearch<- function( longDataVector, sign_function, surrogateValue=NA,
-                    N_MAX= ceil(log2(length(longDataVector)))+1,
+                    N_MAX= ceiling(log2(length(longDataVector)))+1,
                     LDVmin2maxSorted=FALSE,...) {
 if (!LDVmin2maxSorted) longDataVector<- min2maxSort(longDataVector)
 L <-1 #left
